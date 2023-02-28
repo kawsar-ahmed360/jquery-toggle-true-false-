@@ -1,0 +1,30 @@
+<script>
+//    $('.follow_hide_show').on('click',function () {
+//
+//        $('.show_hide_fol').toggle();
+//    })
+
+
+    $('.follow_hide_show').on('click',function(){
+
+        if($(this).attr('data-click-state') == 1) {
+            $(this).attr('data-click-state', 0);
+            $(".show_hide_fol").css('display', 'none');
+            $(".color_manage").css('background', 'none');
+            $(".active_background").css('opacity', '1');
+
+
+
+
+
+        }
+        else {
+            $(this).attr('data-click-state', 1);
+            $(".show_hide_fol").css('display', 'block');
+            $(".color_manage").css('background', 'white');
+            $(".active_background").css('opacity', '0.1');
+        }
+    });
+
+
+</script>
